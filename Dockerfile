@@ -3,7 +3,7 @@ RUN apt-get -qq update && apt-get -qq install -y git
 WORKDIR /app
 RUN chmod 777 /app
 RUN apt-get install git -y
-RUN git clone https://github.com/ZethorDepo/MirrorX.git /app
+RUN git clone https://github.com/Zeidev/MirrorX.git /app
 COPY resources/setup.sh .
 COPY . .
 RUN bash resources/setup.sh
